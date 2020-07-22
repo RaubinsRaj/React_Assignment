@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function isEven(num){
+                return (num%2==0);
+            }
+            function find(){
+                let myArray=[3,5,7,4,8];
+                let val;
+                for(let i=0;i<myArray.length;i++){
+                    if(isEven(myArray[i])== true){
+                        val=myArray[i];
+                        break;
+                    }
+                }
+                document.getElementById('result').innerHTML="The first even element in the array is:" +val;
+            }
+        </script>
+        <title>Assignment 3</title>
+    </head>
+    <body>
+        <input type="button" value="Check" onclick="find()"/><br><br>
+        <div id="result"></div>
+    </body>
+</html>

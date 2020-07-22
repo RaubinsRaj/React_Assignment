@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Rectangle Area</title>
+    </head>
+
+    <body>
+        <script>
+            function Rectangle(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+
+            Rectangle.prototype.getArea = function() {
+                return this.x * this.y;
+            }
+
+            var rect = new Rectangle(4, 5);
+            console.log(rect.getArea());
+        </script>
+    </body>
+</html>

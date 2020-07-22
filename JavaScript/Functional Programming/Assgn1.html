@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           
+            function square(x){
+                return x*x;
+            }
+            function double(x){
+                return x*2;
+            }
+            function composedValue(){
+                var num=document.getElementById('number').value;
+                var result=square(double(num));
+                document.getElementById('result').innerHTML="The result is: "+result;
+            }
+        </script>
+        <title>
+            Assignment 1
+        </title>
+    </head>
+    <body>
+        <input type="number" id="number" placeholder="Enter a number"/>
+        <input type="button" value="Check" onclick="composedValue()"/><br><br>
+        <div id="result"></div>
+    </body>
+</html>

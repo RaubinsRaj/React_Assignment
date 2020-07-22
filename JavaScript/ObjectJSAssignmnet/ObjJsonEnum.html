@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Person Class</title>
+    </head>
+
+    <body>
+        <script>
+            var str = {
+                "firstName":"Cristiano",
+                "lastName":"Ronaldo"
+                };
+
+            var obj = eval(str);
+
+            document.write(obj.firstName + " " + obj.lastName);
+
+//JSON PARSE//
+            const json = '{"FirstName":"Raubins", "LastName":"Raj"}';
+            const obj1 = JSON.parse(json);
+
+            console.log(obj1.FirstName + " " + obj1.LastName);
+        </script>
+    </body>
+</html>

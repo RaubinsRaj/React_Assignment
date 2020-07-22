@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Name Property</title>
+</head>
+<body>
+    <p id="before"></p>
+    <p id="after"></p>
+    <script>
+        var person = {
+            "firstName" : "Raubins",
+            "middleName" : "Raj",
+            "lastName" : "Singh"
+        }
+
+        document.getElementById("before").innerHTML = "firstName : "+person.firstName+"<br> MiddleName : "+person.middleName+"<br> LastName : "+person.lastName;
+
+
+        person.middleName = "Ron";
+
+        document.getElementById("after").innerHTML = "firstName : "+person.firstName+"<br> MiddleName : "+person.middleName+"<br> LastName : "+person.lastName;
+
+    </script>
+</body>
+</html>

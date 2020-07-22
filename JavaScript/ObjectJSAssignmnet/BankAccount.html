@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+</head>
+<body>
+    <script>
+        function BankAccount(){
+            this.accountNumber,
+            this.accountHolderName,
+            this.accountBalance,
+            this.saving = function(isSalary){
+                this.isSalary = isSalary;
+            },
+
+            this.current = function(odLimit){
+                this.odLimit = odLimit;
+            },
+
+            this.withdraw = function(amount){
+                if( this.accountBalance-amount == 0){
+                    console.log("Balance is not sufficient");
+                }else if(this.odLimit-amount < 0){
+                    console.log("odlimit is negative")
+                }
+                else{
+                    this.accountBalance = this.accountBalance-amount;
+                    console.log("amount is debited")
+                }
+            }
+
+            this.getCurrentBalance = function(){
+                console.log("Current Balance is : "+this.accountBalance);
+            }
+        }
+
+        var savingObj = new BankAccount();
+        savingObj.accountNumber = 1001;
+        savingObj.accountHolderName = "Raubins";
+        savingObj.accountBalance = 50000;
+        savingObj.saving(30000);
+
+        var currentObj = new BankAccount();
+        currentObj.accountNumber = 2002;
+        currentObj.accountHolderName = "Raj";
+        currentObj.accountBalance = 60000;
+        currentObj.current(20000);
+
+
+        savingObj.withdraw(10000);
+        savingObj.getCurrentBalance();
+
+        currentObj.withdraw(30000);
+        currentObj.getCurrentBalance();
+
+    </script>
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Rectangle Here</title>
+    </head>
+
+    <body>
+        <script>
+            function Rectangle(){
+                this.height = 'height';
+                this.width = 'width';
+            }
+
+            var rect = new Rectangle();
+            rect.height = "20";
+            rect.width = "40";
+
+            alert("Rectangle is " + rect.height + " in height and " + rect.width + " in width");
+
+            var rect1 = new Rectangle();
+            rect1.height = "25";
+            rect1.width = "60";
+            
+            document.write("Rectangle is " + rect1.height + " in height and " + rect1.width + " in width");
+
+            var rect2 = new Rectangle();
+            rect2.height = "35";
+            rect2.width = "65";
+            
+            console.log("Rectangle is " + rect2.height + " in height and " + rect2.width + " in width");
+
+        </script>
+    </body>
+</html>

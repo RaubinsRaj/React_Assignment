@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Person Class</title>
+    </head>
+
+    <body>
+        <script>
+            var person = {
+                firstName: "Nick",
+                lastName: "Jonas",
+                getInfo: function () {
+                    return this.firstName + ' ' + this.lastName ;
+                }
+            }
+
+            console.log(person);
+            person.lastName = "Pitt";
+            alert(person.getInfo());
+        </script>
+    </body>
+</html>
